@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		816C488A28FC762C007CFC10 /* JoaolifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816C488928FC762C007CFC10 /* JoaolifyApp.swift */; };
+		816C488C28FC762C007CFC10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816C488B28FC762C007CFC10 /* ContentView.swift */; };
+		816C488E28FC762D007CFC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816C488D28FC762D007CFC10 /* Assets.xcassets */; };
+		816C489228FC762D007CFC10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816C489128FC762D007CFC10 /* Preview Assets.xcassets */; };
+		816C489C28FC762D007CFC10 /* JoaolifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816C489B28FC762D007CFC10 /* JoaolifyTests.swift */; };
+		816C48A628FC762D007CFC10 /* JoaolifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816C48A528FC762D007CFC10 /* JoaolifyUITests.swift */; };
+		816C48A828FC762D007CFC10 /* JoaolifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816C48A728FC762D007CFC10 /* JoaolifyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		816C489828FC762D007CFC10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 816C487E28FC762C007CFC10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 816C488528FC762C007CFC10;
+			remoteInfo = Joaolify;
+		};
+		816C48A228FC762D007CFC10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 816C487E28FC762C007CFC10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 816C488528FC762C007CFC10;
+			remoteInfo = Joaolify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		816C488628FC762C007CFC10 /* Joaolify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joaolify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		816C488928FC762C007CFC10 /* JoaolifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoaolifyApp.swift; sourceTree = "<group>"; };
+		816C488B28FC762C007CFC10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		816C488D28FC762D007CFC10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		816C488F28FC762D007CFC10 /* Joaolify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Joaolify.entitlements; sourceTree = "<group>"; };
+		816C489128FC762D007CFC10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		816C489728FC762D007CFC10 /* JoaolifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoaolifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		816C489B28FC762D007CFC10 /* JoaolifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoaolifyTests.swift; sourceTree = "<group>"; };
+		816C48A128FC762D007CFC10 /* JoaolifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoaolifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		816C48A528FC762D007CFC10 /* JoaolifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoaolifyUITests.swift; sourceTree = "<group>"; };
+		816C48A728FC762D007CFC10 /* JoaolifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoaolifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		816C488328FC762C007CFC10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816C489428FC762D007CFC10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816C489E28FC762D007CFC10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		816C487D28FC762C007CFC10 = {
+			isa = PBXGroup;
+			children = (
+				816C488828FC762C007CFC10 /* Joaolify */,
+				816C489A28FC762D007CFC10 /* JoaolifyTests */,
+				816C48A428FC762D007CFC10 /* JoaolifyUITests */,
+				816C488728FC762C007CFC10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		816C488728FC762C007CFC10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				816C488628FC762C007CFC10 /* Joaolify.app */,
+				816C489728FC762D007CFC10 /* JoaolifyTests.xctest */,
+				816C48A128FC762D007CFC10 /* JoaolifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		816C488828FC762C007CFC10 /* Joaolify */ = {
+			isa = PBXGroup;
+			children = (
+				816C488928FC762C007CFC10 /* JoaolifyApp.swift */,
+				816C488B28FC762C007CFC10 /* ContentView.swift */,
+				816C488D28FC762D007CFC10 /* Assets.xcassets */,
+				816C488F28FC762D007CFC10 /* Joaolify.entitlements */,
+				816C489028FC762D007CFC10 /* Preview Content */,
+			);
+			path = Joaolify;
+			sourceTree = "<group>";
+		};
+		816C489028FC762D007CFC10 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				816C489128FC762D007CFC10 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		816C489A28FC762D007CFC10 /* JoaolifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				816C489B28FC762D007CFC10 /* JoaolifyTests.swift */,
+			);
+			path = JoaolifyTests;
+			sourceTree = "<group>";
+		};
+		816C48A428FC762D007CFC10 /* JoaolifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				816C48A528FC762D007CFC10 /* JoaolifyUITests.swift */,
+				816C48A728FC762D007CFC10 /* JoaolifyUITestsLaunchTests.swift */,
+			);
+			path = JoaolifyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		816C488528FC762C007CFC10 /* Joaolify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 816C48AB28FC762D007CFC10 /* Build configuration list for PBXNativeTarget "Joaolify" */;
+			buildPhases = (
+				816C488228FC762C007CFC10 /* Sources */,
+				816C488328FC762C007CFC10 /* Frameworks */,
+				816C488428FC762C007CFC10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Joaolify;
+			productName = Joaolify;
+			productReference = 816C488628FC762C007CFC10 /* Joaolify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		816C489628FC762D007CFC10 /* JoaolifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 816C48AE28FC762D007CFC10 /* Build configuration list for PBXNativeTarget "JoaolifyTests" */;
+			buildPhases = (
+				816C489328FC762D007CFC10 /* Sources */,
+				816C489428FC762D007CFC10 /* Frameworks */,
+				816C489528FC762D007CFC10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				816C489928FC762D007CFC10 /* PBXTargetDependency */,
+			);
+			name = JoaolifyTests;
+			productName = JoaolifyTests;
+			productReference = 816C489728FC762D007CFC10 /* JoaolifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		816C48A028FC762D007CFC10 /* JoaolifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 816C48B128FC762D007CFC10 /* Build configuration list for PBXNativeTarget "JoaolifyUITests" */;
+			buildPhases = (
+				816C489D28FC762D007CFC10 /* Sources */,
+				816C489E28FC762D007CFC10 /* Frameworks */,
+				816C489F28FC762D007CFC10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				816C48A328FC762D007CFC10 /* PBXTargetDependency */,
+			);
+			name = JoaolifyUITests;
+			productName = JoaolifyUITests;
+			productReference = 816C48A128FC762D007CFC10 /* JoaolifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		816C487E28FC762C007CFC10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					816C488528FC762C007CFC10 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					816C489628FC762D007CFC10 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 816C488528FC762C007CFC10;
+					};
+					816C48A028FC762D007CFC10 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 816C488528FC762C007CFC10;
+					};
+				};
+			};
+			buildConfigurationList = 816C488128FC762C007CFC10 /* Build configuration list for PBXProject "Joaolify" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 816C487D28FC762C007CFC10;
+			productRefGroup = 816C488728FC762C007CFC10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				816C488528FC762C007CFC10 /* Joaolify */,
+				816C489628FC762D007CFC10 /* JoaolifyTests */,
+				816C48A028FC762D007CFC10 /* JoaolifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		816C488428FC762C007CFC10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816C489228FC762D007CFC10 /* Preview Assets.xcassets in Resources */,
+				816C488E28FC762D007CFC10 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816C489528FC762D007CFC10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816C489F28FC762D007CFC10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		816C488228FC762C007CFC10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816C488C28FC762C007CFC10 /* ContentView.swift in Sources */,
+				816C488A28FC762C007CFC10 /* JoaolifyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816C489328FC762D007CFC10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816C489C28FC762D007CFC10 /* JoaolifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816C489D28FC762D007CFC10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816C48A828FC762D007CFC10 /* JoaolifyUITestsLaunchTests.swift in Sources */,
+				816C48A628FC762D007CFC10 /* JoaolifyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		816C489928FC762D007CFC10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 816C488528FC762C007CFC10 /* Joaolify */;
+			targetProxy = 816C489828FC762D007CFC10 /* PBXContainerItemProxy */;
+		};
+		816C48A328FC762D007CFC10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 816C488528FC762C007CFC10 /* Joaolify */;
+			targetProxy = 816C48A228FC762D007CFC10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		816C48A928FC762D007CFC10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		816C48AA28FC762D007CFC10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		816C48AC28FC762D007CFC10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Joaolify/Joaolify.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Joaolify/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joao.Joaolify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		816C48AD28FC762D007CFC10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Joaolify/Joaolify.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Joaolify/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joao.Joaolify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		816C48AF28FC762D007CFC10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joao.JoaolifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Joaolify.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Joaolify";
+			};
+			name = Debug;
+		};
+		816C48B028FC762D007CFC10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joao.JoaolifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Joaolify.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Joaolify";
+			};
+			name = Release;
+		};
+		816C48B228FC762D007CFC10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joao.JoaolifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Joaolify;
+			};
+			name = Debug;
+		};
+		816C48B328FC762D007CFC10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joao.JoaolifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Joaolify;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		816C488128FC762C007CFC10 /* Build configuration list for PBXProject "Joaolify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				816C48A928FC762D007CFC10 /* Debug */,
+				816C48AA28FC762D007CFC10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		816C48AB28FC762D007CFC10 /* Build configuration list for PBXNativeTarget "Joaolify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				816C48AC28FC762D007CFC10 /* Debug */,
+				816C48AD28FC762D007CFC10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		816C48AE28FC762D007CFC10 /* Build configuration list for PBXNativeTarget "JoaolifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				816C48AF28FC762D007CFC10 /* Debug */,
+				816C48B028FC762D007CFC10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		816C48B128FC762D007CFC10 /* Build configuration list for PBXNativeTarget "JoaolifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				816C48B228FC762D007CFC10 /* Debug */,
+				816C48B328FC762D007CFC10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 816C487E28FC762C007CFC10 /* Project object */;
+}
