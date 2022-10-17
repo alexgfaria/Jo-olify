@@ -17,7 +17,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDa
 
         // MARK: constrain collection view
         collectionView1.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 0).isActive = true
-        collectionView1.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20).isActive = true
+        collectionView1.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         collectionView1.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: 0).isActive = true
         collectionView1.heightAnchor.constraint(equalTo: collectionView1.widthAnchor, multiplier: 0.5).isActive = true
         collectionView1.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
@@ -27,7 +27,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDa
         scrollView.addSubview(collectionView2)
 
         collectionView2.topAnchor.constraint(equalTo: collectionView1.bottomAnchor, constant: 50).isActive = true
-        collectionView2.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20).isActive = true
+        collectionView2.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         collectionView2.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: 0).isActive = true
         collectionView2.heightAnchor.constraint(equalTo: collectionView2.widthAnchor, multiplier: 0.5).isActive = true
         collectionView2.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
@@ -36,7 +36,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDa
         scrollView.addSubview(collectionView3)
 
         collectionView3.topAnchor.constraint(equalTo: collectionView2.bottomAnchor, constant: 50).isActive = true
-        collectionView3.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20).isActive = true
+        collectionView3.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         collectionView3.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: 0).isActive = true
         collectionView3.heightAnchor.constraint(equalTo: collectionView3.widthAnchor, multiplier: 0.5).isActive = true
         collectionView3.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
@@ -45,7 +45,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDa
         scrollView.addSubview(collectionView4)
 
         collectionView4.topAnchor.constraint(equalTo: collectionView3.bottomAnchor, constant: 50).isActive = true
-        collectionView4.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20).isActive = true
+        collectionView4.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         collectionView4.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: 0).isActive = true
         collectionView4.heightAnchor.constraint(equalTo: collectionView4.widthAnchor, multiplier: 0.5).isActive = true
         collectionView4.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
@@ -77,7 +77,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDa
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
-        return 5
+        return self.results.count
     }
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -89,26 +89,31 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDa
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
-                                                      for: indexPath) as! MyCollectionViewCell
+                                                      for: indexPath) as! CustomCollectionViewCell
+
+        var result: Result
+
+        result = results[indexPath.item]
+
+        cell.configure(label: result.title ?? "título")
+
+        print(cell.movieTitle.text!)
+
+        //image
+
+        let urlImage = "https://api.themoviedb.org/3/movie/550/images?api_key=\(Constants.apiKey)"
+
+        self.download(from: urlImage, index: indexPath.item) { image in
+
+            DispatchQueue.main.async {
+
+                cell.imageView.image = image
+
+                    self.heroImages[indexPath.item] = image
+            }
+        }
 
 
         return cell
     }
-
-    //MARK: - Header
-//    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-//
-//        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader,
-//                                                                      withReuseIdentifier: HeaderCollectionReusableView.identifier,
-//                                                                      for: indexPath) as! HeaderCollectionReusableView
-//
-//        header.configure()
-//
-//        return header
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-//
-//        return CGSize(width: view.frame.size.width, height: 200)
-//    }
 }

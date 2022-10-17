@@ -7,20 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		817A69C128FDD9750005E5A2 /* ViewController+APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817A69C028FDD9750005E5A2 /* ViewController+APIRequest.swift */; };
+		817A69C428FDD9C30005E5A2 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817A69C328FDD9C30005E5A2 /* APIModel.swift */; };
 		8188572828FC84A1008D4FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188572728FC84A1008D4FED /* AppDelegate.swift */; };
 		8188572A28FC84A1008D4FED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188572928FC84A1008D4FED /* SceneDelegate.swift */; };
 		8188572C28FC84A1008D4FED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188572B28FC84A1008D4FED /* ViewController.swift */; };
 		8188572F28FC84A1008D4FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8188572D28FC84A1008D4FED /* Main.storyboard */; };
 		8188573128FC84A3008D4FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8188573028FC84A3008D4FED /* Assets.xcassets */; };
 		8188573428FC84A3008D4FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8188573228FC84A3008D4FED /* LaunchScreen.storyboard */; };
-		8188573C28FC8507008D4FED /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188573B28FC8507008D4FED /* MyCollectionViewCell.swift */; };
+		8188573C28FC8507008D4FED /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188573B28FC8507008D4FED /* CustomCollectionViewCell.swift */; };
 		8188573E28FCBA05008D4FED /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188573D28FCBA05008D4FED /* ScrollView.swift */; };
 		8188574028FCBB15008D4FED /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188573F28FCBB15008D4FED /* CollectionView.swift */; };
 		8188574328FCC298008D4FED /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188574228FCC298008D4FED /* TabBarViewController.swift */; };
-		8188574528FCCC55008D4FED /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188574428FCCC55008D4FED /* HeaderCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		817A69C028FDD9750005E5A2 /* ViewController+APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+APIRequest.swift"; sourceTree = "<group>"; };
+		817A69C328FDD9C30005E5A2 /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		8188572428FC84A1008D4FED /* Joaolify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joaolify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8188572728FC84A1008D4FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8188572928FC84A1008D4FED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,11 +32,10 @@
 		8188573028FC84A3008D4FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8188573328FC84A3008D4FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8188573528FC84A3008D4FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8188573B28FC8507008D4FED /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		8188573B28FC8507008D4FED /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		8188573D28FCBA05008D4FED /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		8188573F28FCBB15008D4FED /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		8188574228FCC298008D4FED /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		8188574428FCCC55008D4FED /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		817A69BF28FDD9580005E5A2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				817A69C028FDD9750005E5A2 /* ViewController+APIRequest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		817A69C228FDD9B50005E5A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				817A69C328FDD9C30005E5A2 /* APIModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		817A69C528FDF6110005E5A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8188574228FCC298008D4FED /* TabBarViewController.swift */,
+				8188572B28FC84A1008D4FED /* ViewController.swift */,
+				8188573F28FCBB15008D4FED /* CollectionView.swift */,
+				8188573D28FCBA05008D4FED /* ScrollView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		8188571B28FC84A1008D4FED = {
 			isa = PBXGroup;
 			children = (
@@ -68,11 +97,10 @@
 			children = (
 				8188572728FC84A1008D4FED /* AppDelegate.swift */,
 				8188572928FC84A1008D4FED /* SceneDelegate.swift */,
-				8188572B28FC84A1008D4FED /* ViewController.swift */,
-				8188574128FCBBDB008D4FED /* CollectionViews */,
-				8188573D28FCBA05008D4FED /* ScrollView.swift */,
-				8188574228FCC298008D4FED /* TabBarViewController.swift */,
-				8188574428FCCC55008D4FED /* HeaderCollectionReusableView.swift */,
+				8188574128FCBBDB008D4FED /* CollectionViewCell */,
+				817A69C528FDF6110005E5A2 /* Views */,
+				817A69BF28FDD9580005E5A2 /* API */,
+				817A69C228FDD9B50005E5A2 /* Models */,
 				8188572D28FC84A1008D4FED /* Main.storyboard */,
 				8188573028FC84A3008D4FED /* Assets.xcassets */,
 				8188573228FC84A3008D4FED /* LaunchScreen.storyboard */,
@@ -81,13 +109,12 @@
 			path = Joaolify;
 			sourceTree = "<group>";
 		};
-		8188574128FCBBDB008D4FED /* CollectionViews */ = {
+		8188574128FCBBDB008D4FED /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				8188573F28FCBB15008D4FED /* CollectionView.swift */,
-				8188573B28FC8507008D4FED /* MyCollectionViewCell.swift */,
+				8188573B28FC8507008D4FED /* CustomCollectionViewCell.swift */,
 			);
-			path = CollectionViews;
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,14 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8188574528FCCC55008D4FED /* HeaderCollectionReusableView.swift in Sources */,
 				8188574028FCBB15008D4FED /* CollectionView.swift in Sources */,
 				8188572C28FC84A1008D4FED /* ViewController.swift in Sources */,
 				8188572828FC84A1008D4FED /* AppDelegate.swift in Sources */,
-				8188573C28FC8507008D4FED /* MyCollectionViewCell.swift in Sources */,
+				817A69C428FDD9C30005E5A2 /* APIModel.swift in Sources */,
+				8188573C28FC8507008D4FED /* CustomCollectionViewCell.swift in Sources */,
 				8188574328FCC298008D4FED /* TabBarViewController.swift in Sources */,
 				8188573E28FCBA05008D4FED /* ScrollView.swift in Sources */,
 				8188572A28FC84A1008D4FED /* SceneDelegate.swift in Sources */,
+				817A69C128FDD9750005E5A2 /* ViewController+APIRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

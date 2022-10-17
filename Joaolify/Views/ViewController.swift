@@ -9,12 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private enum Constants {
+    enum Constants {
 
         static let appTitle = "Joãolify"
         static let apiKey = "347e47393ba71a54fb6eed587df22f79"
-        static let url = "https://api.themoviedb.org/3/movie/550?api_key="
+        static let movieID = 550
+        static let urlDetail = "https://api.themoviedb.org/3/movie/\(movieID)?api_key=\(apiKey)"
+        static let urlPopular = "https://api.themoviedb.org/3/movie/popular?api_key=\(apiKey)&page=1"
     }
+
+    var movie: [Movie] = []
+    var popular: [Popular] = []
+    var results: [Result] = []
+
 
     let scrollView: UIScrollView = {
         let view = UIScrollView()
@@ -37,7 +44,7 @@ class ViewController: UIViewController {
         layout.scrollDirection = .horizontal
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
 
-        cv.register(MyCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        cv.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
 
         cv.translatesAutoresizingMaskIntoConstraints = false
 
@@ -50,7 +57,7 @@ class ViewController: UIViewController {
         layout.scrollDirection = .horizontal
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
 
-        cv.register(MyCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        cv.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
 
         cv.translatesAutoresizingMaskIntoConstraints = false
 
@@ -63,7 +70,7 @@ class ViewController: UIViewController {
         layout.scrollDirection = .horizontal
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
 
-        cv.register(MyCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        cv.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
 
         cv.translatesAutoresizingMaskIntoConstraints = false
 
@@ -76,7 +83,7 @@ class ViewController: UIViewController {
         layout.scrollDirection = .horizontal
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
 
-        cv.register(MyCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        cv.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
 
         cv.translatesAutoresizingMaskIntoConstraints = false
 
@@ -99,20 +106,6 @@ class ViewController: UIViewController {
 
         setupScrollView()
 
-        //MARK: - HEADER
-
-//        collectionView1.register(HeaderCollectionReusableView.self,
-//                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-//                                 withReuseIdentifier: HeaderCollectionReusableView.identifier)
-//
-//        collectionView2.register(HeaderCollectionReusableView.self,
-//                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-//                                 withReuseIdentifier: HeaderCollectionReusableView.identifier)
-//        collectionView3.register(HeaderCollectionReusableView.self,
-//                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-//                                 withReuseIdentifier: HeaderCollectionReusableView.identifier)
-//        collectionView4.register(HeaderCollectionReusableView.self,
-//                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-//                                 withReuseIdentifier: HeaderCollectionReusableView.identifier)
+        self.getData(from: Constants.urlPopular) //assíncrono
     }
 }
