@@ -16,15 +16,13 @@ extension ViewController {
 
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
 
-            //se existirem dados e error for nil, continuar. Senão, print erro
             guard let data = data,
                   error == nil else {
 
-                      print("Something went wrong!")
+                      print("Uh-oh! Something went wrong.")
                       return
                   }
 
-            //have data
             let results: Popular?
             let decoder = JSONDecoder()
 
@@ -34,11 +32,7 @@ extension ViewController {
 
                 self.results.append(contentsOf: results?.results ?? [])
 
-                //image
-                //let newArray: [UIImage?] = Array(repeating: nil, count: results?.data?.results?.count ?? 0) //guardar espaço para novas imagens
-                //self.heroImages.append(contentsOf: newArray)
-
-                DispatchQueue.main.async { //reload tem de ser feito na main queue
+                DispatchQueue.main.async {
 
                     self.collectionView1.reloadData()
                 }
@@ -53,7 +47,6 @@ extension ViewController {
 }
 
 // MARK: Extensions
-//extension from https://stackoverflow.com/questions/24231680/loading-downloading-image-from-url-on-swift
 extension ViewController {
 
     func download(from url: String, index: Int, completion: @escaping (UIImage) -> Void) {

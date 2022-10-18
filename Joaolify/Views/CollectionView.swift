@@ -91,28 +91,28 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDa
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
                                                       for: indexPath) as! CustomCollectionViewCell
 
+        let poster_path: String
+        let vote_average: F
+
+        poster_path = results[indexPath.item].poster_path ?? ""
+
+        let urlImage = "https://image.tmdb.org/t/p/w500\(poster_path)"
+
         var result: Result
 
         result = results[indexPath.item]
 
         cell.configure(label: result.title ?? "título")
 
-        print(cell.movieTitle.text!)
-
         //image
-
-        let urlImage = "https://api.themoviedb.org/3/movie/550/images?api_key=\(Constants.apiKey)"
-
         self.download(from: urlImage, index: indexPath.item) { image in
 
             DispatchQueue.main.async {
 
                 cell.imageView.image = image
 
-                    self.heroImages[indexPath.item] = image
             }
         }
-
 
         return cell
     }

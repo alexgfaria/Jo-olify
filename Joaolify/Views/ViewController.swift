@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         static let appTitle = "Joãolify"
         static let apiKey = "347e47393ba71a54fb6eed587df22f79"
         static let movieID = 550
+        static let page = 1
         static let urlDetail = "https://api.themoviedb.org/3/movie/\(movieID)?api_key=\(apiKey)"
         static let urlPopular = "https://api.themoviedb.org/3/movie/popular?api_key=\(apiKey)&page=1"
     }
@@ -21,6 +22,8 @@ class ViewController: UIViewController {
     var movie: [Movie] = []
     var popular: [Popular] = []
     var results: [Result] = []
+
+    var movieImages: [UIImage?] = []
 
 
     let scrollView: UIScrollView = {
