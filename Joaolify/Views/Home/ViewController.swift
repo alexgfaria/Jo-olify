@@ -17,76 +17,89 @@ class ViewController: UIViewController {
         static let page = 1
         static let urlDetail = "https://api.themoviedb.org/3/movie/\(movieID)?api_key=\(apiKey)"
         static let urlPopular = "https://api.themoviedb.org/3/movie/popular?api_key=\(apiKey)&page=1"
+        static let urlUpcoming = "https://api.themoviedb.org/3/movie/upcoming?api_key=\(apiKey)&page=1"
+        static let urlLatest = "https://api.themoviedb.org/3/movie/latest?api_key=\(apiKey)"
+        static let urlTopRated = "https://api.themoviedb.org/3/movie/top_rated?api_key=\(apiKey)&page=1"
         static let urlImagePartial = "https://image.tmdb.org/t/p/w500"
+        static let collectionViewPopularIdentifier = "CollectionViewPopularIdentifier"
+        static let collectionViewLatestIdentifier = "CollectionViewLatestIdentifier"
+        static let collectionViewTopRatedIdentifier = "CollectionViewTopRatedIdentifier"
+        static let collectionViewUpcomingIdentifier = "CollectionViewUpcomingIdentifier"
     }
 
     var results: [Result] = []
-
     var movieImages: [UIImage] = []
 
-
     let scrollView: UIScrollView = {
+
         let view = UIScrollView()
+
         view.translatesAutoresizingMaskIntoConstraints = false
+
         return view
     }()
 
     let scrollStackViewContainer: UIStackView = {
         
         let view = UIStackView()
+
         view.axis = .vertical
         view.spacing = 0
         view.translatesAutoresizingMaskIntoConstraints = false
+
         return view
     }()
 
-    let collectionView1: UICollectionView = {
+    let collectionViewPopular: UICollectionView = {
 
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
 
-        cv.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        layout.scrollDirection = .horizontal
 
+        cv.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: Constants.collectionViewPopularIdentifier)
         cv.translatesAutoresizingMaskIntoConstraints = false
 
         return cv
     }()
 
-    let collectionView2: UICollectionView = {
+    let collectionViewLatest: UICollectionView = {
 
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
 
-        cv.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        layout.scrollDirection = .horizontal
 
+        //collectionViewPopularIdentifier because not enough time to implement other collectionViews
+        cv.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: Constants.collectionViewPopularIdentifier)
         cv.translatesAutoresizingMaskIntoConstraints = false
 
         return cv
     }()
 
-    let collectionView3: UICollectionView = {
+    let collectionViewTopRated: UICollectionView = {
 
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
 
-        cv.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        layout.scrollDirection = .horizontal
 
+        //collectionViewPopularIdentifier because not enough time to implement other collectionViews
+        cv.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: Constants.collectionViewPopularIdentifier)
         cv.translatesAutoresizingMaskIntoConstraints = false
 
         return cv
     }()
 
-    let collectionView4: UICollectionView = {
+    let collectionViewUpcoming: UICollectionView = {
 
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
 
-        cv.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        layout.scrollDirection = .horizontal
 
+        //collectionViewPopularIdentifier because not enough time to implement other collectionViews
+        cv.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: Constants.collectionViewPopularIdentifier)
         cv.translatesAutoresizingMaskIntoConstraints = false
 
         return cv
@@ -94,20 +107,35 @@ class ViewController: UIViewController {
 
     func configureContainerView() {
 
-        scrollStackViewContainer.addArrangedSubview(collectionView1)
-        scrollStackViewContainer.addArrangedSubview(collectionView2)
-        scrollStackViewContainer.addArrangedSubview(collectionView3)
-        scrollStackViewContainer.addArrangedSubview(collectionView4)
+        scrollStackViewContainer.addArrangedSubview(collectionViewPopular)
+        scrollStackViewContainer.addArrangedSubview(collectionViewLatest)
+        scrollStackViewContainer.addArrangedSubview(collectionViewTopRated)
+        scrollStackViewContainer.addArrangedSubview(collectionViewUpcoming)
     }
 
     override func viewDidLoad() {
 
         super.viewDidLoad()
-
+        
         self.title = Constants.appTitle
+
+        collectionViewPopular.delegate = self
+        collectionViewLatest.delegate = self
+        collectionViewUpcoming.delegate = self
+        collectionViewTopRated.delegate = self
+
+        collectionViewPopular.dataSource = self
+        collectionViewLatest.dataSource = self
+        collectionViewUpcoming.dataSource = self
+        collectionViewTopRated.dataSource = self
 
         setupScrollView()
 
-        self.getData(from: Constants.urlPopular) //assíncrono
+        self.getData(from: Constants.urlPopular)
+
+        //not enough time
+//        self.getData(from: Constants.urlLatest)
+//        self.getData(from: Constants.urlUpcoming)
+//        self.getData(from: Constants.urlTopRated)
     }
 }

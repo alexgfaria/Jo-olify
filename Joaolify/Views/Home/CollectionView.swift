@@ -11,61 +11,61 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDa
 
     func setupCollectionView() {
 
-        collectionView1.translatesAutoresizingMaskIntoConstraints = false
+        collectionViewPopular.translatesAutoresizingMaskIntoConstraints = false
 
-        scrollView.addSubview(collectionView1)
+        scrollView.addSubview(collectionViewPopular)
 
         // MARK: constrain collection view
-        collectionView1.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
-        collectionView1.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        collectionView1.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
-        collectionView1.heightAnchor.constraint(equalTo: collectionView1.widthAnchor, multiplier: 0.5).isActive = true
-        collectionView1.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
-        collectionView1.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
+        collectionViewPopular.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
+        collectionViewPopular.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        collectionViewPopular.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
+        collectionViewPopular.heightAnchor.constraint(equalTo: collectionViewPopular.widthAnchor, multiplier: 0.5).isActive = true
+        collectionViewPopular.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
+        collectionViewPopular.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
 
-        collectionView2.translatesAutoresizingMaskIntoConstraints = false
-        scrollView.addSubview(collectionView2)
+        collectionViewLatest.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.addSubview(collectionViewLatest)
 
-        collectionView2.topAnchor.constraint(equalTo: collectionView1.bottomAnchor, constant: 50).isActive = true
-        collectionView2.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        collectionView2.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
-        collectionView2.heightAnchor.constraint(equalTo: collectionView2.widthAnchor, multiplier: 0.5).isActive = true
-        collectionView2.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
+        collectionViewLatest.topAnchor.constraint(equalTo: collectionViewPopular.bottomAnchor, constant: 50).isActive = true
+        collectionViewLatest.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        collectionViewLatest.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
+        collectionViewLatest.heightAnchor.constraint(equalTo: collectionViewLatest.widthAnchor, multiplier: 0.5).isActive = true
+        collectionViewLatest.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
 
-        collectionView3.translatesAutoresizingMaskIntoConstraints = false
-        scrollView.addSubview(collectionView3)
+        collectionViewTopRated.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.addSubview(collectionViewTopRated)
 
-        collectionView3.topAnchor.constraint(equalTo: collectionView2.bottomAnchor, constant: 50).isActive = true
-        collectionView3.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        collectionView3.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
-        collectionView3.heightAnchor.constraint(equalTo: collectionView3.widthAnchor, multiplier: 0.5).isActive = true
-        collectionView3.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
+        collectionViewTopRated.topAnchor.constraint(equalTo: collectionViewLatest.bottomAnchor, constant: 50).isActive = true
+        collectionViewTopRated.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        collectionViewTopRated.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
+        collectionViewTopRated.heightAnchor.constraint(equalTo: collectionViewTopRated.widthAnchor, multiplier: 0.5).isActive = true
+        collectionViewTopRated.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
 
-        collectionView4.translatesAutoresizingMaskIntoConstraints = false
-        scrollView.addSubview(collectionView4)
+        collectionViewUpcoming.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.addSubview(collectionViewUpcoming)
 
-        collectionView4.topAnchor.constraint(equalTo: collectionView3.bottomAnchor, constant: 50).isActive = true
-        collectionView4.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        collectionView4.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
-        collectionView4.heightAnchor.constraint(equalTo: collectionView4.widthAnchor, multiplier: 0.5).isActive = true
-        collectionView4.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
+        collectionViewUpcoming.topAnchor.constraint(equalTo: collectionViewTopRated.bottomAnchor, constant: 50).isActive = true
+        collectionViewUpcoming.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        collectionViewUpcoming.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
+        collectionViewUpcoming.heightAnchor.constraint(equalTo: collectionViewUpcoming.widthAnchor, multiplier: 0.5).isActive = true
+        collectionViewUpcoming.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
 
-        collectionView1.delegate = self
-        collectionView1.dataSource = self
+        collectionViewPopular.delegate = self
+        collectionViewPopular.dataSource = self
 
-        collectionView2.delegate = self
-        collectionView2.dataSource = self
+        collectionViewLatest.delegate = self
+        collectionViewLatest.dataSource = self
 
-        collectionView3.delegate = self
-        collectionView3.dataSource = self
+        collectionViewTopRated.delegate = self
+        collectionViewTopRated.dataSource = self
 
-        collectionView4.delegate = self
-        collectionView4.dataSource = self
+        collectionViewUpcoming.delegate = self
+        collectionViewUpcoming.dataSource = self
 
-        collectionView1.showsHorizontalScrollIndicator = false
-        collectionView2.showsHorizontalScrollIndicator = false
-        collectionView3.showsHorizontalScrollIndicator = false
-        collectionView4.showsHorizontalScrollIndicator = false
+        collectionViewPopular.showsHorizontalScrollIndicator = false
+        collectionViewLatest.showsHorizontalScrollIndicator = false
+        collectionViewTopRated.showsHorizontalScrollIndicator = false
+        collectionViewUpcoming.showsHorizontalScrollIndicator = false
     }
 
     func collectionView(_ collectionView: UICollectionView,
@@ -77,7 +77,13 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDa
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
-        return self.results.count
+        //not enough time -- for collection view with different amounts of cells
+        //if collectionView == self.collectionViewPopular {
+
+            return results.count // Replace with count of your data for collectionViewA
+            //}
+
+            //return 0 // Replace with count of your data for collectionViewB
     }
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -88,48 +94,61 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
-                                                      for: indexPath) as! CustomCollectionViewCell
+        //not enough time to implement different collectionViews
+        //if collectionView == self.collectionViewPopular {
 
-        let poster_path: String
-        let vote_average: Float
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.collectionViewPopularIdentifier,
+                                                          for: indexPath) as! CustomCollectionViewCell
 
-        var result: Result
+            let poster_path: String
+            let vote_average: Float
 
-        poster_path = results[indexPath.item].poster_path ?? ""
-        vote_average = results[indexPath.item].vote_average ?? 0
+            var result: Result
 
-        if vote_average >= 6 {
+            poster_path = results[indexPath.item].poster_path ?? ""
+            vote_average = results[indexPath.item].vote_average ?? 0
 
-            cell.movieTitle.textColor = .systemYellow
-        }
+            if vote_average >= 6 {
 
-        let urlImage = Constants.urlImagePartial + poster_path
-
-        result = results[indexPath.item]
-
-        cell.configure(label: result.title ?? "No Title 🤷")
-
-        //image
-        self.download(from: urlImage, index: indexPath.item) { image in
-
-            DispatchQueue.main.async {
-
-                cell.imageView.image = image
-
+                cell.movieTitle.textColor = .systemYellow
             }
-        }
 
-        return cell
+            let urlImage = Constants.urlImagePartial + poster_path
+
+            result = results[indexPath.item]
+            cell.configure(label: result.title ?? "No Title 🤷")
+
+            //image
+            self.download(from: urlImage, index: indexPath.item) { image in
+
+                DispatchQueue.main.async {
+
+                    cell.imageView.image = image
+
+                }
+            }
+
+            return cell
+
+        //other collectionViews
+       // }
+
+//        else if collectionView == self.collectionViewLatest { {
+//
+//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.collectionViewPopularIdentifier,
+//                                                          for: indexPath) as! CustomCollectionViewCell
+//
+//            // ...Set up cell
+//
+//            return cell
+//        }
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
-        let voteAverage = results[indexPath.item].vote_average ?? 0
-        //let image = results[indexPath.item]
-
         let movieDetailViewController = MovieDetailViewController(voteAverage: results[indexPath.item].vote_average ?? 0,
                                                                   poster: movieImages[indexPath.item])
+        let voteAverage = results[indexPath.item].vote_average ?? 0
 
         movieDetailViewController.transitioningDelegate = self
         movieDetailViewController.definesPresentationContext = true
@@ -158,8 +177,5 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDa
 
             self.present(alert, animated: true, completion: nil)
         }
-        
-
-
     }
 }

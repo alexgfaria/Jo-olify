@@ -9,8 +9,12 @@ import UIKit
 
 class CustomCollectionViewCell: UICollectionViewCell {
 
-    static let identifier = "CustomCollectionViewCell"
+    enum Constants {
 
+        static let cellIdentifier = "CustomCollectionViewCell"
+        static let identifier = CustomCollectionViewCell.Constants.cellIdentifier
+    }
+    
     let imageView: UIImageView = {
 
         let imageView = UIImageView()
@@ -28,7 +32,6 @@ class CustomCollectionViewCell: UICollectionViewCell {
 
         contentView.addSubview(imageView)
         contentView.addSubview(movieTitle)
-
         contentView.clipsToBounds = true
     }
 
@@ -49,6 +52,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
         
         fatalError()
     }
+    
 
     override func layoutSubviews() {
 

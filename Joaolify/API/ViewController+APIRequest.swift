@@ -34,7 +34,10 @@ extension ViewController {
 
                 DispatchQueue.main.async {
 
-                    self.collectionView1.reloadData()
+//                    self.collectionViewPopular.reloadData()
+//                    self.collectionViewLatest.reloadData()
+//                    self.collectionViewTopRated.reloadData()
+//                    self.collectionViewUpcoming.reloadData()
                 }
 
             } catch {
