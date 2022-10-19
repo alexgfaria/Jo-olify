@@ -11,7 +11,7 @@ class TabBar: UITabBarController {
 
     enum Constants {
 
-        static let heroListViewControllerTitle = "Heroes"
+        static let ViewControllerTitle = "Joãolify"
     }
 
     override func viewDidLoad() {
@@ -40,7 +40,7 @@ class TabBar: UITabBarController {
         viewControllers = [
 
             createNavController(for: ViewController(),
-                                   title: Constants.heroListViewControllerTitle)
+                                title: Constants.ViewControllerTitle)
         ]
     }
 
