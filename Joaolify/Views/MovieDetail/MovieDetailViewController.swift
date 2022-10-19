@@ -22,7 +22,6 @@ class MovieDetailViewController: UIViewController {
         label.numberOfLines = 2
         label.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
         label.backgroundColor = .black.withAlphaComponent(0.6)
-        label.text = "teste"
 
         return label
     }()
