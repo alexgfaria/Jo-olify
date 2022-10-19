@@ -58,6 +58,8 @@ extension ViewController {
             guard let data = data,
                   let image = UIImage(data: data) else { return }
 
+            self.movieImages.append(image)
+
             completion(image)
         }.resume()
     }

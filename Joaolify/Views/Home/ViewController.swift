@@ -17,13 +17,12 @@ class ViewController: UIViewController {
         static let page = 1
         static let urlDetail = "https://api.themoviedb.org/3/movie/\(movieID)?api_key=\(apiKey)"
         static let urlPopular = "https://api.themoviedb.org/3/movie/popular?api_key=\(apiKey)&page=1"
+        static let urlImagePartial = "https://image.tmdb.org/t/p/w500"
     }
 
-    var movie: [Movie] = []
-    var popular: [Popular] = []
     var results: [Result] = []
 
-    var movieImages: [UIImage?] = []
+    var movieImages: [UIImage] = []
 
 
     let scrollView: UIScrollView = {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		816EF62B28FF51B200E37B01 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816EF62A28FF51B200E37B01 /* MovieDetailViewController.swift */; };
 		817A69C128FDD9750005E5A2 /* ViewController+APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817A69C028FDD9750005E5A2 /* ViewController+APIRequest.swift */; };
 		817A69C428FDD9C30005E5A2 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817A69C328FDD9C30005E5A2 /* APIModel.swift */; };
 		8188572828FC84A1008D4FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188572728FC84A1008D4FED /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		816EF62A28FF51B200E37B01 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		817A69C028FDD9750005E5A2 /* ViewController+APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+APIRequest.swift"; sourceTree = "<group>"; };
 		817A69C328FDD9C30005E5A2 /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		8188572428FC84A1008D4FED /* Joaolify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joaolify.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +51,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		816EF62C28FF51B800E37B01 /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				816EF62A28FF51B200E37B01 /* MovieDetailViewController.swift */,
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
+		816EF62D28FF51DD00E37B01 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8188574228FCC298008D4FED /* TabBarViewController.swift */,
+				8188572B28FC84A1008D4FED /* ViewController.swift */,
+				8188573F28FCBB15008D4FED /* CollectionView.swift */,
+				8188573D28FCBA05008D4FED /* ScrollView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		817A69BF28FDD9580005E5A2 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,10 +89,8 @@
 		817A69C528FDF6110005E5A2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8188574228FCC298008D4FED /* TabBarViewController.swift */,
-				8188572B28FC84A1008D4FED /* ViewController.swift */,
-				8188573F28FCBB15008D4FED /* CollectionView.swift */,
-				8188573D28FCBA05008D4FED /* ScrollView.swift */,
+				816EF62C28FF51B800E37B01 /* MovieDetail */,
+				816EF62D28FF51DD00E37B01 /* Home */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,6 +213,7 @@
 				817A69C428FDD9C30005E5A2 /* APIModel.swift in Sources */,
 				8188573C28FC8507008D4FED /* CustomCollectionViewCell.swift in Sources */,
 				8188574328FCC298008D4FED /* TabBarViewController.swift in Sources */,
+				816EF62B28FF51B200E37B01 /* MovieDetailViewController.swift in Sources */,
 				8188573E28FCBA05008D4FED /* ScrollView.swift in Sources */,
 				8188572A28FC84A1008D4FED /* SceneDelegate.swift in Sources */,
 				817A69C128FDD9750005E5A2 /* ViewController+APIRequest.swift in Sources */,

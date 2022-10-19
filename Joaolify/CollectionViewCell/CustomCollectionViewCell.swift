@@ -69,4 +69,12 @@ class CustomCollectionViewCell: UICollectionViewCell {
 
         self.movieTitle.text = label
     }
+
+    override func prepareForReuse() { //reset each cell when is dequeued
+
+        super.prepareForReuse()
+
+        self.movieTitle.text = nil
+        self.imageView.image = nil
+    }
 }
